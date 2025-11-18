@@ -7,4 +7,4 @@ venv/
 *$py.class
 
 # Config
-# backup_config.json
+backup_config.json

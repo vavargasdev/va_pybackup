@@ -1,9 +1,12 @@
-# VaVargas PyBackup
-# Simple Backup Manager
+<div align="right">
+<a href="./README-pt.md">Ler em português</a>
+</div>
+
+# VaVargas PyBackup - Simple Backup Manager
 
 A simple desktop application built with Python and Tkinter to manage and execute file backup/synchronization tasks.
 
-<!-- ![VaVar PyBackup](https://raw.githubusercontent.com/vavargasdev/va_pybackup/refs/heads/main/VaVarBackupScreen.jpg) -->
+![VaVar PyBackup](https://raw.githubusercontent.com/vavargasdev/va_pybackup/refs/heads/main/VaVarBackupScreen.jpg)
 
 ## Features
 
@@ -22,7 +25,7 @@ A simple desktop application built with Python and Tkinter to manage and execute
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/seu-usuario/va_backup.git
+    git clone https://github.com/vavargasdev/va_pybackup.git
     cd va_backup
     ```
 
@@ -40,4 +43,3 @@ A simple desktop application built with Python and Tkinter to manage and execute
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
-
