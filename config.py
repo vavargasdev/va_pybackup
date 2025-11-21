@@ -26,12 +26,21 @@ class BackupConfig:
         self._load()
 
     def _load(self) -> None:
-        """Load configuration file if exists, otherwise initialize empty dict."""
+        """Load configuration file if exists, otherwise initialize default dict."""
         if os.path.exists(self.path):
             with open(self.path, "r", encoding="utf-8") as f:
                 self._data = json.load(f)
         else:
-            self._data = {}
+            self._data = {
+                "Test Backup": {
+                    "source_dir": "E:\\Tmp\\Origin",
+                    "dest_dir": "E:\\Tmp\\Destination",
+                    "exclude_dirs": ["$RECYCLE.BIN", "$AV_NLL", ".venv", "venv"],
+                    "ignore_files": [".bak", ".tmp", ".sys", ".git"],
+                    "update_existing": True,
+                    "notes": "For testing purposes only. Adjust and click Save Configuration.",
+                }
+            }
 
     def save_group(self, group: str, config: Dict) -> None:
         """Save or update a group configuration and flush to disk."""
@@ -44,8 +53,12 @@ class BackupConfig:
         return self._data.get(
             group,
             {
-                "source_dir": "", "dest_dir": "", "exclude_dirs": [],
-                "ignore_files": [], "update_existing": True, "notes": "",
+                "source_dir": "",
+                "dest_dir": "",
+                "exclude_dirs": [],
+                "ignore_files": [],
+                "update_existing": True,
+                "notes": "",
             },
         )
 

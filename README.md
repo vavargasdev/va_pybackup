@@ -26,7 +26,7 @@ A simple desktop application built with Python and Tkinter to manage and execute
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/vavargasdev/va_pybackup.git
-    cd va_backup
+    cd va_pybackup
     ```
 
 2.  **Run the application:**
